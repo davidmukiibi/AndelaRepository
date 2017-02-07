@@ -10,3 +10,5 @@ def primefunction(number):
         else:
             return "the given number is zero or a negative number"
 
+    else:
+        return "the given value is not an integer"
