@@ -3,5 +3,9 @@ def words(sentence):
   wordsInSentence = sentence.split()
   for word in wordsInSentence:
     if word is not None:
-          finalDic[word] = wordsInSentence.count(word)
+      if word.isdigit() == True:
+        finalDic[int(word)] = wordsInSentence.count(word)
+      else:
+        finalDic[word] = wordsInSentence.count(word)
+          	
   return finalDic
